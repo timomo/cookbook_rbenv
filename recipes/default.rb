@@ -37,6 +37,11 @@ template "/etc/profile.d/rbenv.sh" do
   mode "0644"
 end
 
+# install dependencies package
+yum_package "openssl-devel.x86_64" do
+  action :upgrade
+end
+
 # install ruby 2.1.6
 bash "install ruby" do
   code <<-_EOH_
