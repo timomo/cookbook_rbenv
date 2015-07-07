@@ -38,7 +38,7 @@ template "/etc/profile.d/rbenv.sh" do
 end
 
 # install dependencies package
-yum_package "openssl-devel.x86_64" do
+yum_package "openssl-devel" do
   action :upgrade
 end
 
