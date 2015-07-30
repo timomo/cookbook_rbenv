@@ -42,6 +42,14 @@ yum_package "openssl-devel" do
   action :upgrade
 end
 
+yum_package "-devel" do
+  action :upgrade
+end
+
+yum_package "readline-devel" do
+  action :upgrade
+end
+
 # install ruby 2.1.6
 bash "install ruby" do
   code <<-_EOH_
