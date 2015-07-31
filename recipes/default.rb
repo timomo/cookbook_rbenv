@@ -42,10 +42,6 @@ yum_package "openssl-devel" do
   action :upgrade
 end
 
-yum_package "-devel" do
-  action :upgrade
-end
-
 yum_package "readline-devel" do
   action :upgrade
 end
